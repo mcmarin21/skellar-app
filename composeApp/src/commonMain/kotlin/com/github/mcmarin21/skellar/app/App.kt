@@ -24,6 +24,6 @@ import skellar_app.composeapp.generated.resources.compose_multiplatform
 @Preview
 fun App() {
     SkellarTheme {
-        
+
     }
 }
