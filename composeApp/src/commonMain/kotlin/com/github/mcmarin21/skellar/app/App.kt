@@ -14,6 +14,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.github.mcmarin21.skellar.app.ui.theme.SkellarTheme
 import org.jetbrains.compose.resources.painterResource
 
 import skellar_app.composeapp.generated.resources.Res
@@ -22,11 +23,11 @@ import skellar_app.composeapp.generated.resources.compose_multiplatform
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
+    SkellarTheme {
         var showContent by remember { mutableStateOf(false) }
         Column(
             modifier = Modifier
-                .background(MaterialTheme.colorScheme.primaryContainer)
+                .background(MaterialTheme.colorScheme.surface)
                 .safeContentPadding()
                 .fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -41,7 +42,7 @@ fun App() {
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
                     Image(painterResource(Res.drawable.compose_multiplatform), null)
-                    Text("Compose: $greeting")
+                    Text("Compose: $greeting", color = MaterialTheme.colorScheme.onSurface)
                 }
             }
         }
