@@ -1,0 +1,7 @@
+TEAM_ID=
+
+PRODUCT_NAME=skellar-app
+PRODUCT_BUNDLE_IDENTIFIER=com.github.mcmarin21.skellar.app.skellar-app$(TEAM_ID)
+
+CURRENT_PROJECT_VERSION=1
+MARKETING_VERSION=1.0
